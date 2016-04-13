@@ -16,7 +16,8 @@ To be able to complete this training you need:
 
 ## Step 1 - Configure the database
 
-1 install mongodb  - if not the case go to https://www.mongodb.org/
+1 install mongodb  - if not the case go to [mongodb](https://www.mongodb.org/)
+
 2 When installed start mongo using:
 ```
 > mongod
