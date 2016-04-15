@@ -41,6 +41,19 @@ Check it by typing in the mongodb shell this command :
 > show dbs
 ```
 
+## Step 2 - Project Structure
+
+```
+*
+|
+|___pom.xml
+|___/todo-services
+    |___pom.xml
+    |___/src
+        |___/main
+
+```
+
 
 
 
