@@ -18,7 +18,11 @@ To be able to complete this training you need:
 
 1 install mongodb  - if not the case go to [mongodb](https://www.mongodb.org/)
 
-2 When installed start mongo using:
+2 When installed start mongo using:<parent>
+                                           <groupId>org.springframework.cloud</groupId>
+                                           <artifactId>spring-cloud-starter-parent</artifactId>
+                                           <version>Angel.SR6</version>
+                                       </parent>
 ```
 > mongod
 ```
