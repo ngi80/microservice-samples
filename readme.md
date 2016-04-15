@@ -51,7 +51,35 @@ Check it by typing in the mongodb shell this command :
     |___pom.xml
     |___/src
         |___/main
-
+        |    |___/java
+        |    |    |___/com.todo.service
+        |    |    |    |___Application.java
+        |    |    |    |___/api
+        |    |    |    |    |___ToDoRestService.java
+        |    |    |    |___/data
+        |    |    |        |___/config
+        |    |    |        |    |___MongoConfig.java
+        |    |    |        |___/model
+        |    |    |        |    |___ToDo.java
+        |    |    |________|___/service
+        |    |                |___ToDoService
+        |    |                |___MongoToDoService
+        |    |                |___/framework
+        |    |                    |___ServiceFactory.java
+        |    |                    |___ServiceSelector.java
+        |    |___/resources
+        |        |___application.yml
+        |___/test
+            |___/java
+            |    |___/com.todo.service
+            |        |___/api
+            |           |___ToDoServiceTest.java
+            |            |___/data.service
+            |                |___/framework
+            |                |    |___ServiceSelectorMongoDBIT.java
+            |                |    |___ServiceSelectorOtherIT.java
+            |                |___AnotherToDoService.java
+            |___todo-service.jmx
 ```
 
 
