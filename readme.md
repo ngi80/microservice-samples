@@ -53,7 +53,7 @@ Check it by typing in the mongodb shell this command :
         |___/main
         |    |___/java
         |    |    |___/com.todo.service
-        |    |    |    |___Application.java     _info:_
+        |    |    |    |___Application.java     _info: Application Bootstrap_
         |    |    |    |___/api
         |    |    |    |    |___ToDoRestService.java
         |    |    |    |___/data
