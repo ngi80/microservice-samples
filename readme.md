@@ -48,12 +48,12 @@ Check it by typing in the mongodb shell this command :
 |
 |___pom.xml
 |___/todo-services
-    |___pom.xml     _info: project parent pom_
+    |___pom.xml     *info: project parent pom*
     |___/src
         |___/main
         |    |___/java
         |    |    |___/com.todo.service
-        |    |    |    |___Application.java     _info: Application Bootstrap_
+        |    |    |    |___Application.java     *info: Application Bootstrap*
         |    |    |    |___/api
         |    |    |    |    |___ToDoRestService.java
         |    |    |    |___/data
