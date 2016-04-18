@@ -48,17 +48,17 @@ Check it by typing in the mongodb shell this command :
 |
 |___pom.xml
 |___/todo-services
-    |___pom.xml     *info: project parent pom*
+    |___pom.xml     -- info: project parent pom
     |___/src
         |___/main
         |    |___/java
         |    |    |___/com.todo.service
-        |    |    |    |___Application.java     *info: Application Bootstrap*
+        |    |    |    |___Application.java      -- info: Application Bootstrap
         |    |    |    |___/api
-        |    |    |    |    |___ToDoRestService.java
+        |    |    |    |    |___ToDoRestService.java    -- info: API Rest Controller End-Point
         |    |    |    |___/data
         |    |    |        |___/config
-        |    |    |        |    |___MongoConfig.java
+        |    |    |        |    |___MongoConfig.java    -- info: Mongo DB global configuration (rem: db connection access are configured in application.yml using Spring Data)
         |    |    |        |___/model
         |    |    |        |    |___ToDo.java
         |    |    |________|___/service
