@@ -58,15 +58,15 @@ Check it by typing in the mongodb shell this command :
         |    |    |    |    |___ToDoRestService.java    -- info: API Rest Controller End-Point
         |    |    |    |___/data
         |    |    |        |___/config
-        |    |    |        |    |___MongoConfig.java    -- info: Mongo DB global configuration (rem: db connection access are configured in application.yml using Spring Data)
+        |    |    |        |    |___MongoConfig.java    -- info: Mongo DB global configuration (rem: db connection access are configured in application.yml and use Spring Data)
         |    |    |        |___/model
-        |    |    |        |    |___ToDo.java
+        |    |    |        |    |___ToDo.java       -- info: Mongo document model
         |    |    |________|___/service
-        |    |                |___ToDoService
-        |    |                |___MongoToDoService
-        |    |                |___/framework
-        |    |                    |___ServiceFactory.java
-        |    |                    |___ServiceSelector.java
+        |    |                |___ToDoService       -- info: interface for accessing DB
+        |    |                |___MongoToDoService  -- info: MongoDB access implementation
+        |    |                |___/framework        -- info: Simple test I did to be able to load the DB access implementation in a generic way (my objective is to be able to change the implementation at runtime...see next training)
+        |    |                    |___ServiceFactory.java   -- info: create a bean based on the qualifier name
+        |    |                    |___ServiceSelector.java  -- info: service selector implementation - used in this training only for db access.
         |    |___/resources
         |        |___application.yml
         |___/test
@@ -79,7 +79,7 @@ Check it by typing in the mongodb shell this command :
             |                |    |___ServiceSelectorMongoDBIT.java
             |                |    |___ServiceSelectorOtherIT.java
             |                |___AnotherToDoService.java
-            |___todo-service.jmx
+            |___todo-service.jmx        -- info: JMETER Performance Test Script.
 ```
 
 
