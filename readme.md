@@ -1,6 +1,6 @@
-# Microservice Training
+# Microservice Samples
 
-## Training 1 - Create a microservice
+## Sample 1 - Create a microservice
 
 This step describes how to create a simple Rest Service connecting to its own mongo database.
 
