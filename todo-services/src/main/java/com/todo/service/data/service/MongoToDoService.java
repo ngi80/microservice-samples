@@ -17,7 +17,6 @@ public class MongoToDoService implements ToDoService
     @Autowired
     private MongoTemplate mongoTemplate;
 
-
     public ToDo findToDo(final String toDoId)
     {
         return mongoTemplate.findById(toDoId, ToDo.class);

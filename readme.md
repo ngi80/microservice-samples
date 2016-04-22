@@ -53,20 +53,20 @@ Check it by typing in the mongodb shell this command :
         |___/main
         |    |___/java
         |    |    |___/com.todo.service
-        |    |    |    |___Application.java      -- info: Application Bootstrap
+        |    |    |    |___Application.java      // Application Bootstrap
         |    |    |    |___/api
-        |    |    |    |    |___ToDoRestService.java    -- info: API Rest Controller End-Point
+        |    |    |    |    |___ToDoRestService.java    // API Rest Controller End-Point
         |    |    |    |___/data
         |    |    |        |___/config
-        |    |    |        |    |___MongoConfig.java    -- info: Mongo DB global configuration (rem: db connection access are configured in application.yml and use Spring Data)
+        |    |    |        |    |___MongoConfig.java    // Mongo DB global configuration
         |    |    |        |___/model
-        |    |    |        |    |___ToDo.java       -- info: Mongo document model
+        |    |    |        |    |___ToDo.java       // Mongo document model
         |    |    |________|___/service
-        |    |                |___ToDoService       -- info: interface for accessing DB
-        |    |                |___MongoToDoService  -- info: MongoDB access implementation
-        |    |                |___/framework        -- info: Simple test I did to be able to load the DB access implementation in a generic way (my objective is to be able to change the implementation at runtime...see next training)
-        |    |                    |___ServiceFactory.java   -- info: create a bean based on the qualifier name
-        |    |                    |___ServiceSelector.java  -- info: service selector implementation - used in this training only for db access.
+        |    |                |___ToDoService       // interface for accessing DB
+        |    |                |___MongoToDoService  // MongoDB access implementation
+        |    |                |___/framework        // Simple test I did to be able to load the DB access implementation in a generic way (my objective is to be able to change the implementation at runtime...see next training)
+        |    |                    |___ServiceFactory.java   // create a bean based on the qualifier name
+        |    |                    |___ServiceSelector.java  // service selector implementation - used in this training only for db access.
         |    |___/resources
         |        |___application.yml
         |___/test
@@ -79,7 +79,7 @@ Check it by typing in the mongodb shell this command :
             |                |    |___ServiceSelectorMongoDBIT.java
             |                |    |___ServiceSelectorOtherIT.java
             |                |___AnotherToDoService.java
-            |___todo-service.jmx        -- info: JMETER Performance Test Script.
+            |___todo-service.jmx        // JMETER Performance Test Script.
 ```
 
 
