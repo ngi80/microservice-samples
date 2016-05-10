@@ -40,8 +40,9 @@ Check it by typing in the mongodb shell this command :
 
 ## Project Structure
 
-*
+```
 |
-|___pom.xml
+|--pom.xml
 |
-|___[todo-services](todo-services)
+|--[todo-services](todo-services)
+```
