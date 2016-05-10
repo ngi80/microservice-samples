@@ -42,5 +42,5 @@ Check it by typing in the mongodb shell this command :
 
 *
 |
-|___pom.xml
-|___[todo-services](todo-services)
+|___ pom.xml
+|___ [todo-services](todo-services)
