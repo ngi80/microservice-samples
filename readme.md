@@ -1,16 +1,15 @@
 # Microservice Samples
 
-## Sample 1 - Create a microservice
-
-This step describes how to create a simple Rest Service connecting to its own mongo database.
+Full TODO List Micro Services Stack.
+The Goal is to explore Micro Services Architecture
 
 The technologies in use are :
 
-* Spring Boot
+* Spring Boot, Cloud
 * mongodb
 
-## Step 0 - prerequisites
-To be able to complete this training you need:
+## Step 0 - Prerequisites
+To be able to run this sample you need:
 * jdk 8+
 * maven
 
@@ -18,11 +17,7 @@ To be able to complete this training you need:
 
 1 install mongodb  - if not the case go to [mongodb](https://www.mongodb.org/)
 
-2 When installed start mongo using:<parent>
-                                           <groupId>org.springframework.cloud</groupId>
-                                           <artifactId>spring-cloud-starter-parent</artifactId>
-                                           <version>Angel.SR6</version>
-                                       </parent>
+2 When installed start mongo using:
 ```
 > mongod
 ```
@@ -41,47 +36,8 @@ Check it by typing in the mongodb shell this command :
 > show dbs
 ```
 
-## Step 2 - Project Structure
+## Project Structure
 
-```
 *
 |
 |___pom.xml
-|___/todo-services
-    |___pom.xml     -- info: project parent pom
-    |___/src
-        |___/main
-        |    |___/java
-        |    |    |___/com.todo.service
-        |    |    |    |___Application.java      // Application Bootstrap
-        |    |    |    |___/api
-        |    |    |    |    |___ToDoRestService.java    // API Rest Controller End-Point
-        |    |    |    |___/data
-        |    |    |        |___/config
-        |    |    |        |    |___MongoConfig.java    // Mongo DB global configuration
-        |    |    |        |___/model
-        |    |    |        |    |___ToDo.java       // Mongo document model
-        |    |    |________|___/service
-        |    |                |___ToDoService       // interface for accessing DB
-        |    |                |___MongoToDoService  // MongoDB access implementation
-        |    |                |___/framework        // Simple test I did to be able to load the DB access implementation in a generic way (my objective is to be able to change the implementation at runtime...see next training)
-        |    |                    |___ServiceFactory.java   // create a bean based on the qualifier name
-        |    |                    |___ServiceSelector.java  // service selector implementation - used in this training only for db access.
-        |    |___/resources
-        |        |___application.yml
-        |___/test
-            |___/java
-            |    |___/com.todo.service
-            |        |___/api
-            |           |___ToDoServiceTest.java
-            |            |___/data.service
-            |                |___/framework
-            |                |    |___ServiceSelectorMongoDBIT.java
-            |                |    |___ServiceSelectorOtherIT.java
-            |                |___AnotherToDoService.java
-            |___todo-service.jmx        // JMETER Performance Test Script.
-```
-
-
-
-

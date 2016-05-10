@@ -2,6 +2,7 @@ package com.todo.service.data.service.framework;
 
 import com.todo.service.Application;
 import com.todo.service.data.service.AnotherToDoService;
+import com.todo.service.data.service.DataServiceSelector;
 import com.todo.service.data.service.ToDoService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -20,7 +21,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class ServiceSelectorOtherIT {
 
     @Autowired
-    private ServiceSelector<ToDoService> toDoService;
+    private DataServiceSelector<ToDoService> toDoService;
 
     @Test
     public void TestServiceSelectorInitialization(){

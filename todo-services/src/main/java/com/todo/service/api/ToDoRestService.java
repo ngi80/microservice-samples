@@ -1,6 +1,7 @@
 package com.todo.service.api;
 
 import com.todo.service.data.model.ToDo;
+import com.todo.service.data.service.DataServiceSelector;
 import com.todo.service.data.service.ToDoService;
 import com.todo.service.data.service.framework.ServiceSelector;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import java.util.List;
 public class ToDoRestService {
 
     @Autowired
-    private ServiceSelector<ToDoService> toDoService;
+    private DataServiceSelector<ToDoService> toDoService;
 
     @RequestMapping(method = RequestMethod.GET)
     public List<ToDo> getAll(){

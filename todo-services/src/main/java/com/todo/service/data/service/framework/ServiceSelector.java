@@ -9,14 +9,13 @@ import javax.annotation.PostConstruct;
 /**
  * Created by nicolasgilmant on 13/04/16.
  */
-@Component
-public class ServiceSelector<T>
+public abstract class ServiceSelector<T>
 {
     @Autowired
     private ServiceFactory serviceFactory;
 
-    @Value("${datalayer.selector.property}")
-    private String selectorProperty;
+    /*@Value("${datalayer.selector.property}")*/
+    protected String selectorProperty;
 
     private T service;
 
@@ -29,4 +28,6 @@ public class ServiceSelector<T>
     public T getService() {
         return service;
     }
+
+    public abstract void setSelectorProperty(final String selectorProperty);
 }
