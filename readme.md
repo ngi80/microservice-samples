@@ -38,12 +38,8 @@ Check it by typing in the mongodb shell this command :
 > show dbs
 ```
 
-## Project Structure
+## Project modules
 
-```
-|
-|--pom.xml
-|
-|--[todo-services](todo-services)
 
-```
+[todo-services](todo-services)
+
