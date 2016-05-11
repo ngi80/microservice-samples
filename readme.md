@@ -10,12 +10,12 @@ The technologies in use are :
 * Spring Boot, Cloud
 * mongodb
 
-## Step 0 - Prerequisites
+## Prerequisites
 To be able to run this sample you need:
 * jdk 8+
 * maven
 
-## Step 1 - Configure the database
+## Configure the database
 
 1 install mongodb  - if not the case go to [mongodb](https://www.mongodb.org/)
 
@@ -39,7 +39,6 @@ Check it by typing in the mongodb shell this command :
 ```
 
 ## Project modules
-
 
 [todo-services](todo-services)
 

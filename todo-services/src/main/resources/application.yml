@@ -9,6 +9,7 @@ spring:
       port: 27017
       database: todos
 # todo service config
+# -------------------
 # Spring
 # data access service implementation qualifier
 datalayer:
