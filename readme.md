@@ -40,7 +40,7 @@ Check it by typing in the mongodb shell this command :
 
 ## Project modules
 
-[todo-config-server](todo-config-server)
-[config-repo](config-repo)
-[todo-services](todo-services)
+* [todo-config-server](todo-config-server)
+* [config-repo](config-repo)
+* [todo-services](todo-services)
 
