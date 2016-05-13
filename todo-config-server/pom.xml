@@ -9,13 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>todo-services</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>todo-config-server</artifactId>
 
-    <!--dependencies>
+    <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
-    </dependencies-->
+    </dependencies>
 </project>

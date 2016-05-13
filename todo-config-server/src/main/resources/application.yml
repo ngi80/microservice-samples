@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: todo-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ngi80/microservice-samples
+          searchPaths: config-repo

@@ -2,6 +2,7 @@ package com.todo.service.data.service;
 
 import com.todo.service.data.service.framework.ServiceSelector;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Component;
 
 /**

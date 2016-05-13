@@ -1,17 +1,8 @@
 server:
   port: 8091
-spring:
-  application:
-    name: todo-service
   data:
     mongodb:
       host: 127.0.0.1
       port: 27017
       database: todos
-# todo service config
-# -------------------
-# Spring
-# data access service implementation qualifier
-datalayer:
-  selector:
-    property: mongodb
+
